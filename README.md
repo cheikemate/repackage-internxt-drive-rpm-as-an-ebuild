@@ -128,6 +128,17 @@ src_install() {
 		fi
 	done
 
+	# Explicitly install the bundled 256x256 icon from the RPM
+	local rpm_icon="${S}/usr/share/icons/hicolor/256x256/apps/internxt.png"
+	if [[ -f "${rpm_icon}" ]]; then
+		newicon -s 256 "${rpm_icon}" internxt.png
+	fi
+
+	# Ensure the desktop file references 'internxt' (matches internxt.png)
+	if [[ -f "${ED}/usr/share/applications/internxt.desktop" ]]; then
+		sed -i 's|^Icon=.*|Icon=internxt|' "${ED}/usr/share/applications/internxt.desktop" || die
+	fi
+
 	# Provide libxml2.so.2 ABI compatibility for bundled ClamAV
 	if [[ -d "${ED}/opt/Internxt/resources/clamAV/lib" ]]; then
 		dosym /usr/lib64/libxml2.so.16 /opt/Internxt/resources/clamAV/lib/libxml2.so.2
