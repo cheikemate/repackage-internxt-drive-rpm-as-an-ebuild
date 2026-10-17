@@ -2,6 +2,7 @@
 
 <img width="630" height="583" alt="Screenshot-2026-10-17_12-30" src="https://github.com/user-attachments/assets/95c7224c-385a-4154-a604-13339f80a603" />
 <img width="347" height="414" alt="Screenshot-2026-10-17_12-29" src="https://github.com/user-attachments/assets/b53ff499-f08d-4a07-bef2-775164c1cc0e" />
+<img width="614" height="579" alt="Screenshot-2026-10-17_12-37" src="https://github.com/user-attachments/assets/e641a960-073c-424c-9418-1ae46832a9cd" />
 
 
 Packaging upstream binary RPM releases on Gentoo provides an efficient way to install Electron-based desktop clients while maintaining full package tracking via Portage. Because prebuilt RPM archives are assembled against upstream enterprise distributions, native binary components (such as FUSE mounting helpers, antivirus engines, and desktop integration scripts) often require specific ABI compatibility symlinks, permission adjustments, and system libraries to function reliably on Gentoo.
