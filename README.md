@@ -5,6 +5,8 @@
 <img width="614" height="579" alt="Screenshot-2026-10-17_12-37" src="https://github.com/user-attachments/assets/e641a960-073c-424c-9418-1ae46832a9cd" />
 
 
+
+
 Packaging upstream binary RPM releases on Gentoo provides an efficient way to install Electron-based desktop clients while maintaining full package tracking via Portage. Because prebuilt RPM archives are assembled against upstream enterprise distributions, native binary components (such as FUSE mounting helpers, antivirus engines, and desktop integration scripts) often require specific ABI compatibility symlinks, permission adjustments, and system libraries to function reliably on Gentoo.
 
 Below is the complete technical guide and documentation for creating, placing, and maintaining the `net-misc/internxt-drive-2.6.2` ebuild in a local Portage repository.
